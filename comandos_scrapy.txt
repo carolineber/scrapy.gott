@@ -1,0 +1,4 @@
+cd (para entra na pasta)
+scrapy (mostra a versao do scrapy)
+python (mostra a versão do python)
+scrapy runspider vivareal.py (roda a raspagem)
