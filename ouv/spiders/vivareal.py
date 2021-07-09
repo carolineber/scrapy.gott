@@ -59,7 +59,8 @@ class VivarealCrawl(scrapy.Spider):
 
     def parse(self, response):
         links = response.xpath(
-            '//*/a[@class="property-card__title js-cardLink js-card-title"]/@href').extract()
+            '//*/a[@class="property-card__content-link js-card-title"]/@href').extract()
+        print(links)
         if links is not None:
             links = list(set(links))  # remove duplicatas
         for imovel in links:
